@@ -2,7 +2,7 @@
 function Bluetooth({ setDevice, setCharacteristic, setServer, setService }) {
 
     const connectToDevice = async () => {
-        const device = await navigator.bluetooth
+        const device = await navigator.uG
         .requestDevice({
             filters: [
                 { namePrefix: "Device Name" },
